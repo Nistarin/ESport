@@ -143,6 +143,22 @@ main section:nth-child(3) {
   animation-delay: 0.8s;
 }
 
+section ul {
+  animation: icons 0.7s backwards;
+}
+
+@keyframes icons {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @keyframes fromTop {
   from {
     opacity: 0;
